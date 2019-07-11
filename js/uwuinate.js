@@ -104,7 +104,7 @@ function uwuWord(word, index) {
 
   uwu = uwu.replace(/you're/g, "ur");
   uwu = uwu.replace(/youre/g, "ur");
-  uwu = uwu.replace(/fuck/g, "f**k");
+  uwu = uwu.replace(/fuck/g, "fwickk");
   uwu = uwu.replace(/shit/g, "poopoo");
   uwu = uwu.replace(/bitch/g, "meanie");
   uwu = uwu.replace(/asshole/g, "b-butthole");
