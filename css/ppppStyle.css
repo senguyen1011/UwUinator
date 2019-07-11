@@ -1,0 +1,114 @@
+/* Nunito */
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap');
+
+html, body {
+  margin: 0px;
+  font-size: 16px;
+  height: 100%;
+  background-color: #664827 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important; 
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #d8e1e0 !important;
+}
+
+#main {
+  height: 100%;
+  
+}
+
+.heading {
+  padding-top: 1rem;
+  display: block;
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #edf7f6;
+}
+
+.subheading {
+  padding-bottom: 1rem;
+  display: block;
+  font-family: Nunito;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #e8f2f1;
+}
+
+.button {
+  padding: 0.2rem 1.5rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #664827;
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #edf7f6;
+  text-decoration: none;
+  border: 2px solid #edf7f6;
+  border-radius: 2rem;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #a2c8ae;
+  color: #edf7f6;
+  border-color: #a2c8ae;
+}
+
+.poopForm {
+  font-family: Nunito;
+  font-weight: 400;
+}
+
+#alert {
+  text-align: center;
+  width: 80%;
+  left: 10%;
+  margin-top: 1rem;
+  padding: 0.4rem 1.5rem;
+  position: absolute;
+  display: none;
+  z-index: 99;
+  background-color: #a2c8ae;
+  
+  font-family: Nunito;
+  font-weight: 600;
+  color: #edf7f6;
+  border-radius: 2rem;
+  
+}
+
+textarea {
+  width: 100%;
+  min-height: 20rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  font-family: Nunito;
+  font-weight: 400;
+  color: #675457;
+  border: none;
+  border-radius: 0.8rem;
+  overflow: auto;
+  resize: none !important;
+}
+
+#legend {
+  margin-top: 0.9rem;
+  float: left;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #e8f2f1;
+}
+
+#copyButton {
+  transition: none;
+  display: none;
+}
