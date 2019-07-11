@@ -25,24 +25,25 @@
 </head>
 
 <body>
-  <div id="main">
-    <div id="alert">
+  <div id="alert">
+  </div>
+  <div class="container text-center">
+    <span class="heading">UwUinator</span>
+    <span class="subheading">OwO *notices text* What's this?</span>
+    <div class="row">
+      <button class="button col-auto ml-auto mr-3" onclick="uwuinate();">✧ UwUinate ✧</button>
+      <button class="button col-auto mr-auto ml-3" onclick="randomize();">Cursed Button</button>
     </div>
-    <div class="container text-center">
-      <span class="heading">UwUinator</span>
-      <span class="subheading">OwO *notices text* What's this?</span>
-      <button class="button" onclick="uwuinate();">✧ UwUinate ✧</button>
-      <form class="uwuForm row mt-4">
-          <div class="col">
-            <textarea id="textInput" placeholder="S-senpai... put it* inside me,," autocomplete="off"></textarea>
-            <small id="legend">*The text you would like to convert</small>
-          </div>
-          <div class="col">
-            <textarea id="textResult" readonly></textarea>
-            <button type="button" id="copyButton" class="button mt-4" onclick="copyText();">Copy Text</button>
-          </div>
-      </form>
-    </div>
+    <form class="uwuForm row mt-4">
+        <div class="col">
+          <textarea id="textInput" placeholder="S-senpai... put it* inside me,," autocomplete="off"></textarea>
+          <small id="legend">*The text you would like to convert</small>
+        </div>
+        <div class="col">
+          <textarea id="textResult" readonly></textarea>
+          <button type="button" id="copyButton" class="button mt-4" onclick="copyText();">Copy Text</button>
+        </div>
+    </form>
   </div>
 </body>
 
