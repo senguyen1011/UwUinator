@@ -109,6 +109,8 @@ function uwuWord(word, index) {
   uwu = uwu.replace(/bitch/g, "meanie");
   uwu = uwu.replace(/asshole/g, "b-butthole");
   uwu = uwu.replace(/dick/g, "big, meaty man-sausage");
+  uwu = uwu.replace(/penis/g, "peenie");
+  uwu = uwu.replace(/ my dick | my penis /g, " my peenie ");
   uwu = uwu.replace(/ ass /g, " boi pussy ");
   uwu = uwu.replace(/ dad | father /g, " daddy ");
 
