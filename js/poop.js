@@ -29,27 +29,57 @@ function poop() {
 function poopWord(word, index) {
   var poop = "";
 
-  var lastChar = word[word.length - 1];
-  var end = "";
-  var random = 0;
-  if (lastChar == '.' || lastChar == '?' || lastChar == '!' || lastChar == ',') {
-    word = word.slice(0, -1);
-    end = lastChar;
-  }
-
-  if (word.length <= 3) {
-    word = "pee";
-  }
-  else if (word.length == 4) {
-    word = "poop";
-  }
-  else if (word.length <= 6) {
-    word = "peepee";
+  var poopSplit = word.split(/[^A-Za-z]/);
+  var separators = [];
+  
+  /*if (word.charAt(0).match(/^[A-Za-z0-9]+$/)) {
+    var start = '';
   }
   else {
-    word = "poopoo";
+    var start = word.charAt(0);
   }
-  poop = word + end + ' ';
+
+  if (word.charAt(word.length - 1).match(/^[A-Za-z0-9]+$/)) {
+    var end = '';
+  }
+  else {
+    var end = word.charAt(word.length - 1);
+  }*/
+
+  var i = 0;
+  var search = 0;
+  while (poopSplit[i]) {
+    if (search == 0) {
+      search = poopSplit[i].length;
+    }
+    else {
+      search += poopSplit[i].length + 1;
+    }
+    
+    separators[i] = word.charAt(search);
+    if (poopSplit[i].length <= 3) {
+      poopSplit[i] = "pee";
+    }
+    else if (poopSplit[i].length == 4) {
+      poopSplit[i] = "poop";
+    }
+    else if (poopSplit[i].length <= 6) {
+      poopSplit[i] = "peepee";
+    }
+    else {
+      poopSplit[i] = "poopoo";
+    }
+    if (search >= word.length) {
+      poop += poopSplit[i];
+    }
+    else {
+      poop += poopSplit[i] + separators[i];
+    }
+    
+    i++;
+  }
+
+  poop += ' ';
 
   $('#textResult').html($('#textResult').html() + poop);
 }
