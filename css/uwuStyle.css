@@ -9,8 +9,13 @@ html, body {
 }
 
 a {
-  text-decoration: none;
-  color: inherit; 
+  text-decoration: none !important;
+  color: inherit !important; 
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #d8e1e0 !important;
 }
 
 #main {
