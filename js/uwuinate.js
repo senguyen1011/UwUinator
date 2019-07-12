@@ -108,12 +108,13 @@ function uwuWord(word, index) {
   uwu = uwu.replace(/shit/g, "poopoo");
   uwu = uwu.replace(/bitch/g, "meanie");
   uwu = uwu.replace(/asshole/g, "b-butthole");
-  uwu = uwu.replace(/dick/g, "big, meaty man-sausage");
+  uwu = uwu.replace(/dick/g, "peenie");
   uwu = uwu.replace(/penis/g, "peenie");
-  uwu = uwu.replace(/ my dick | my penis /g, " my peenie ");
-  uwu = uwu.replace(/ cum | semen /g, " cummies ");
-  uwu = uwu.replace(/ ass /g, " boi pussy ");
-  uwu = uwu.replace(/ dad | father /g, " daddy ");
+  uwu = uwu.replace(/\bcum\b/g, "cummies");
+  uwu = uwu.replace(/\bsemen\b/g, " cummies ");
+  uwu = uwu.replace(/\bass\b/g, " boi pussy ");
+  uwu = uwu.replace(/\bdad\b/g, "daddy");
+  uwu = uwu.replace(/\bfather\b/g, "daddy");
 
   if (uwu.length > 2 && uwu[0].match(/[a-z]/i)) {
     random = Math.floor(Math.random() * 5);
