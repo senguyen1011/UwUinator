@@ -117,7 +117,7 @@ function uwuWord(word, index) {
   uwu = uwu.replace(/\bfather\b/g, "daddy");
 
   if (uwu.length > 2 && uwu[0].match(/[a-z]/i)) {
-    random = Math.floor(Math.random() * 5);
+    random = Math.floor(Math.random() * 6);
     if (random == 0) {
       uwu = uwu[0] + '-' + uwu;
     }
